@@ -100,7 +100,7 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 70%; 
   margin: 0 auto;
 }
 /*=================================
@@ -108,7 +108,16 @@ li {
 =================================*/
 
 
+header .wrapper{
+  text-align: center;
+  background-color: #2b2e37;
+}
 
+header p{
+  color: #ffffff;
+  font-size: 30px;
+  padding: 10px 0;
+}
 
 
 
@@ -121,29 +130,65 @@ li {
 =================================*/
 
 
+main .wrapper{ 
+  width: 50%; 
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+}
 
+.accordion{ margin: 10px 0; }
 
+.accordion-title{
+  font-size: 20px;
+  border-bottom: 1px solid #cccccc;
+  padding: 20px 3%;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s;
+}
 
+.accordion-txt{
+  color: #f5f5dc;
+  background-color: #e9967a;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 0;
+  padding: 0 5%;
+  transition: all 0.5s;
+}
 
+.accordion-title::after{
+  content: "+";
+  color: #555555;
+  font-size: 28px;
+  position: absolute;
+  right: 3%;
+  transform: rotate(0);
+  z-index: 3;
+  transition: all 0.5s ;
+}
 
+.active{
+  padding: 20px 5%;
+  height: max-content;
+  transition: all 0.5s ;
+}
+
+.active-title{
+  color: #e9967a;
+  background-color: #f5f5dc;
+  transition: all 0.5s ;
+}
+
+.active-title::after{
+  transform: rotate(45deg);
+  transition: all 0.5s ;
+}
 
 /*=================================
   main styling ends here
 =================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
 
 /*media query starts*/
 /*media query for 995px starts here*/
