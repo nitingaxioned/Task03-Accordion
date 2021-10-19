@@ -144,12 +144,8 @@ main .wrapper{
   border-bottom: 1px solid #cccccc;
   padding: 20px 3%;
   position: relative;
-}
-
-.accordion-title-click{
-  border-bottom: none;
-  color: #e9967a;
-  background-color: #f5f5dc;
+  cursor: pointer;
+  transition: all 0.5s;
 }
 
 .accordion-txt{
@@ -159,7 +155,7 @@ main .wrapper{
   overflow: hidden;
   height: 0;
   padding: 0 5%;
-  transition: all 0.5s ;
+  transition: all 0.5s;
 }
 
 .accordion-title::after{
@@ -175,7 +171,13 @@ main .wrapper{
 
 .active{
   padding: 20px 5%;
-  height: auto;
+  height: max-content;
+  transition: all 0.5s ;
+}
+
+.active-title{
+  color: #e9967a;
+  background-color: #f5f5dc;
   transition: all 0.5s ;
 }
 
